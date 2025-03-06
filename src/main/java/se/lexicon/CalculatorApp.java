@@ -29,7 +29,7 @@ public class CalculatorApp {
                     keepRunning = false;
                     break;
                 default:
-                    UserInteractionHelper.showUserText("Not a valid option, try again.\n");
+                    UserInteractionHelper.showUserText("Not a valid menu option.\n");
                     break; // Use continue if necessary
             }
 
