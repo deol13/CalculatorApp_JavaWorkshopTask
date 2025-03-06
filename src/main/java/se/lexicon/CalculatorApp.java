@@ -38,36 +38,36 @@ public class CalculatorApp {
 
     private static void additionSelected(){
         boolean keepGettingNewNumbers = true;
-        List<Double> nums = new ArrayList<Double>();
+        List<Double> numbers = new ArrayList<Double>();
 
         UserInteractionHelper.showUserText("This addition takes any number of numbers, if you want to stop inputting numbers, input a 0.");
 
         do {
             double num = UserInteractionHelper.doubleInputFromUser("Input a number: ");
             if (num != 0)
-                nums.add(num);
+                numbers.add(num);
             else
                 keepGettingNewNumbers = false;
         } while (keepGettingNewNumbers);
 
-        double sum = Calculator.addition(nums);
+        double sum = Calculator.addition(numbers);
         UserInteractionHelper.showUserText("The sum of all the numbers is: " + sum + "\n");
     }
     private static void subtractionSelected(){
         boolean keepGettingNewNumbers = true;
-        List<Double> nums = new ArrayList<Double>();
+        List<Double> numbers = new ArrayList<Double>();
 
         UserInteractionHelper.showUserText("This subtraction takes any number of numbers, if you want to stop inputting numbers, input a 0.");
 
         do {
             double num = UserInteractionHelper.doubleInputFromUser("Input a number: ");
             if (num != 0)
-                nums.add(num);
+                numbers.add(num);
             else
                 keepGettingNewNumbers = false;
         } while (keepGettingNewNumbers);
 
-        double sum = Calculator.subtraction(nums);
+        double sum = Calculator.subtraction(numbers);
         UserInteractionHelper.showUserText("The minuend(result) of all the numbers is: " + sum + "\n");
     }
     private static void multiplicationSelected(){
